@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private float horiazontalMove;
     private float verticalMove;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -28,4 +27,5 @@ public class PlayerController : MonoBehaviour
         rb.velocity = (transform.forward * verticalMove) * playerSpeed * Time.deltaTime;
         transform.Rotate((transform.up * horiazontalMove) * rotationSpeed * Time.deltaTime);
     }
+
 }
